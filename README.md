@@ -14,4 +14,10 @@ npm install mongoose --save
 
 # body-parser 설치 -> package.json에 dependency 추가됨
 npm install body-parser --save
+
+# 서버 실행
+npm run start
+
+# 매번 서버 내리고 올리기 힘듬 -> daemon 필요, 로컬에서만 하겠다 -dev -> devDependencies에 들어감
+npm install nodemon --save-dev
 ```

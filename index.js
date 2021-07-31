@@ -4,6 +4,8 @@ const port = 3000
 const bodyParser = require('body-parser');
 const { User } = require("./models/User");
 
+const config = require('./config/key')
+
 // application/x-www-form-url-urlencoded -> 분석해서 가져옴
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -11,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://david:david123@nodejs-restapi.xprbb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+mongoose.connect(config.mongoURI, {
     // 에러 뜸, 적어야됨
     useNewUrlParser : true, useUnifiedTopology : true, useCreateIndex :true, useFindAndModify : false
 }).then(() => console.log(`MongoDB Connected...`))
@@ -19,7 +21,7 @@ mongoose.connect('mongodb+srv://david:david123@nodejs-restapi.xprbb.mongodb.net/
 
 
 
-app.get('/', (req, res) => res.send('Hello World'))
+app.get('/', (req, res) => res.send('Hello World.....'))
 
 // 회원가입
 app.post('/register', (req, res) => {
