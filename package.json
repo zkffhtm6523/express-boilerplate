@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/zkffhtm6523/nodejs_restapi#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "mongoose": "^5.13.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   }
 }

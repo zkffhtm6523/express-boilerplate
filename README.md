@@ -11,4 +11,7 @@ npm install express --save
 
 # mongoose 설치 -> package.json에 dependency 추가됨
 npm install mongoose --save
+
+# body-parser 설치 -> package.json에 dependency 추가됨
+npm install body-parser --save
 ```
