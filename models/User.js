@@ -35,4 +35,4 @@ const userSchema = mongoose.Schema({
 const User = mongoose.model('User', userSchema)
 
 // 다른 곳에서 사용할 수 있게 export를 해준다, 마치 java의 return처럼
-module.exports = { user }
+module.exports = { User }
