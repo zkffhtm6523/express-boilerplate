@@ -1,5 +1,5 @@
 {
-  "name": "nodejs_restapi",
+  "name": "node_boilerPlate",
   "version": "1.0.0",
   "description": "NodeJS -> RestAPI",
   "main": "server/index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zkffhtm6523/nodejs_restapi.git"
+    "url": "git+https://github.com/zkffhtm6523/node_boilerPlate.git"
   },
   "author": "david",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zkffhtm6523/nodejs_restapi/issues"
+    "url": "https://github.com/zkffhtm6523/node_boilerPlate/issues"
   },
-  "homepage": "https://github.com/zkffhtm6523/nodejs_restapi#readme",
+  "homepage": "https://github.com/zkffhtm6523/node_boilerPlate#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
