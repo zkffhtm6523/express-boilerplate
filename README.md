@@ -1,4 +1,4 @@
-# nodejs_restapi
+# BoilerPlate 환경 설정
 ```shell
 # ================== Server 구축 ==================
 
