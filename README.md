@@ -1,5 +1,7 @@
 # nodejs_restapi
 ```shell
+# ================== Server 구축 ==================
+
 # 디렉토리 안에서 -> 모든 설정 다 enter
 npm init
 
@@ -29,4 +31,11 @@ npm install jsonwebtoken -- save
 
 # 쿠키 변환
 npm install cookie-parser --save
+
+# ================== Client 구축 ==================
+# client 디렉토리 이동
+cd client
+
+# 오래 걸림
+npx create-react-app . 
 ```

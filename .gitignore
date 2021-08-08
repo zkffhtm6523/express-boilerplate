@@ -2,7 +2,7 @@ node_modules
 
 dev.js
 prod.js
-config/prod.js
+server/config/prod.js
 /.idea/.gitignore
 /.idea/dataSources.xml
 /.idea/misc.xml
