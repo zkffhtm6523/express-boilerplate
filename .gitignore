@@ -3,3 +3,9 @@ node_modules
 dev.js
 prod.js
 config/prod.js
+/.idea/.gitignore
+/.idea/dataSources.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/nodeJS_restAPI.iml
+/.idea/vcs.xml

@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt')
 const saltRounds = 10
+const jwt = require('jsonwebtoken');
+
 
 const userSchema = mongoose.Schema({
 	name:{
@@ -14,7 +16,7 @@ const userSchema = mongoose.Schema({
 	},
 	lastname: {
 		type : String,
-		maxlength : 50	
+		maxlength : 50
 	},
 	password:{
 		type : String,
@@ -48,8 +50,30 @@ userSchema.pre('save', function (next){
 				next()
 			})
 		})
+	}else{
+		next()
 	}
 })
+
+userSchema.methods.comparePassword = function (plainPassword, cb){
+	// plainPassword
+	bcrypt.compare(plainPassword, this.password, function (err, isMatch) {
+		if(err) return cb(err)
+		cb(null, isMatch)
+	})
+}
+
+userSchema.methods.generateToken = function (cb) {
+	var user = this;
+	console.log('user._id', user._id)
+	
+	// jsonWebToken을 이용하여 Token 생성
+	user.token = jwt.sign(user._id.toHexString(), 'secretToken');
+	user.save(function (err, user) {
+		if(err) return cb(err)
+		cb(null, user)
+	})
+}
 
 // 스키마를 모델로 감싸준다
 const User = mongoose.model('User', userSchema)

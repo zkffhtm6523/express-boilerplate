@@ -22,5 +22,11 @@ npm run start
 npm install nodemon --save-dev
 
 # 비밀번호 암호화
-npm install bcrypt
+npm install bcrypt --save
+
+# JSON Web Token 설치
+npm install jsonwebtoken -- save
+
+# 쿠키 변환
+npm install cookie-parser --save
 ```
