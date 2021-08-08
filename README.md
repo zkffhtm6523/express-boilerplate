@@ -32,10 +32,16 @@ npm install jsonwebtoken -- save
 # 쿠키 변환
 npm install cookie-parser --save
 
+# server, client 디렉토리 나눠주기
+# index.js 및 package.json 경로 수정 필요
+
 # ================== Client 구축 ==================
 # client 디렉토리 이동
 cd client
 
 # 오래 걸림
-npx create-react-app . 
+npx create-react-app .
+
+# client에서 react 시작
+npm run start 
 ```
