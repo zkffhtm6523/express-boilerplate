@@ -28,6 +28,8 @@ app.post('/register', (req, res) => {
 
     const user = new User(req.body)
 
+    
+
     user.save((err, userInfo) => {
     // userInfo 적어줘야 에러 안 감
         if(err) return res.json({ success: false, err})
