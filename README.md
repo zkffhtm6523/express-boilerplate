@@ -44,4 +44,7 @@ npx create-react-app .
 
 # client에서 react 시작
 npm run start 
+
+# React-Router-Dom 설치
+npm install react-router-dom --save
 ```
