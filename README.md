@@ -47,4 +47,7 @@ npm run start
 
 # React-Router-Dom 설치
 npm install react-router-dom --save
+
+# axios 요청하기 위함(비동기) - #21
+npm install axios --save
 ```
