@@ -11,7 +11,7 @@ function RegisterPage() {
 
     return (
         <div>
-            RegisterPage
+            RegisterPage1  
         </div>
     )
 }
