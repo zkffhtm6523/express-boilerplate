@@ -50,4 +50,12 @@ npm install react-router-dom --save
 
 # axios 요청하기 위함(비동기) - #21
 npm install axios --save
+
+# ================== Client & Server 동시 구동 ==================
+# concurrently 설치(서버 디렉토리에서)
+npm install concurrently --save
+
+# CSS Framework 설치(클라이언트 디렉토리)
+# ant.design
+npm install antd --save
 ```

@@ -1,6 +1,6 @@
 import React, {userEffect} from "react";
 import axios from 'axios';
-import { response } from "express";
+
 
 function RegisterPage() {
 
