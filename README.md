@@ -58,4 +58,9 @@ npm install concurrently --save
 # CSS Framework 설치(클라이언트 디렉토리)
 # ant.design
 npm install antd --save
+
+# redux 설치
+npm install redux react-redux redux-promise redux-thunk --save
+
+
 ```
