@@ -3,10 +3,9 @@ const app = express()
 const port = 5000
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const config = require('./config/key')
 const { User } = require('./models/User');
 const { auth } = require('./middleware/auth');
-
-const config = require('./config/key')
 
 // application/x-www-form-url-urlencoded -> 분석해서 가져옴
 app.use(bodyParser.urlencoded({extended: true}));
@@ -35,11 +34,10 @@ app.get('/api/hello', (req, res) => {
 
 // 회원가입
 app.post('/api/users/register', (req, res) => {
-
+    console.log('호출 완료')
+    console.log(req.body)
     const user = new User(req.body)
-
     
-
     user.save((err, userInfo) => {
     // userInfo 적어줘야 에러 안 감
         if(err) return res.json({ success: false, err})
